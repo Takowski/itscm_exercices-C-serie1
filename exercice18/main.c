@@ -1,18 +1,16 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[])
-{
+int main() {
     double number = 0;
-    printf("vas y met s'y un chiffre\n");
-    scanf("%lg", &number);
 
-    if (number > 0)
-    {
-        printf("calice, il est positif\n");
-    }
-    else
-    {
-        printf("tabernak ! il est pô positif\n");
+    printf("Introduisez un nombre pour déterminer si il est positif:\n");
+
+    scanf("%lf", &number);
+
+    if (number > 0) {
+        printf("le nombre est positif\n");
+    } else {
+        printf("le nombre n'est pas positif\n");
     }
 
     return 0;
